@@ -38,7 +38,7 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data_web/comarques.gpkg
+          git add data_web/data_quarto.gpkg
           git commit -m 'Data updated' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
         
