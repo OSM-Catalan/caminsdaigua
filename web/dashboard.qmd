@@ -12,7 +12,7 @@ echo: false
 library(tinytable)
 library(sf)
 
-comarques <- st_read("https://github.com/OSM-Catalan/caminsdaigua/raw/main/data_web/data_quarto.geojson",quiet = TRUE)
+comarques <- st_read("https://github.com/OSM-Catalan/caminsdaigua/raw/main/data_web/data_quarto.gpkg",quiet = TRUE)
 ```
 
 

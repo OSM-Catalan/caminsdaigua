@@ -50,6 +50,6 @@ comarques_web <- comarques[,"NOMCOMAR"] |>
 
 colnames(comarques_web) <- c("comarca", "length_osm", "length_icgc", "geometry")
 comarques_web$ratio <- comarques_web$length_osm/comarques_web$length_icgc
-st_write(comarques_web, "data_web/data_quarto.geojson")
+st_write(comarques_web, "data_web/data_quarto.gpkg", append = FALSE)
 
 
