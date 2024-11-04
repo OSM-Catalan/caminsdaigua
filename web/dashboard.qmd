@@ -1,0 +1,75 @@
+---
+title: "Camins d'Aigua"
+subtitle: "Seguiment introducció de dades de rieres, rierols i recs a OSM Catalunya"
+author: "Marc Bosch i Matas"
+format: html
+warning: false
+message: false
+echo: false
+---
+
+```{r}
+library(tinytable)
+library(sf)
+
+comarques <- st_read("https://github.com/OSM-Catalan/caminsdaigua/raw/main/data_web/data_quarto.geojson",quiet = TRUE)
+```
+
+
+
+```{r}
+
+
+comarques_nogeom <- st_drop_geometry(comarques)
+
+cap <-paste0("Longitud cursos d'aigua ICGC: ", paste(scales::comma(round(sum(comarques_nogeom$length_icgc)/1000, 2),
+                                                       big.mark = ".",
+                                                       decimal.mark =  ","), " km"),"\n",
+      "Longitud cursos d'aigua OSM: ", paste(scales::comma(round(sum(comarques_nogeom$length_osm)/1000, 2),
+                                                       big.mark = ".",
+                                                       decimal.mark =  ","), " km"),"\n",
+      "Percentatge de cursos d'aigua a OSM: ", scales::percent(sum(comarques_nogeom$length_osm)/sum(comarques_nogeom$length_icgc), .01))
+
+```
+
+
+## Seguiment per comarques
+```{r}
+#| fig-cap: !expr cap
+#| fig-cap-location: margin
+comarques_nogeom$length_osm <- scales::comma(comarques_nogeom$length_osm/1000,
+                                             big.mark = ".",
+                                             decimal.mark =  ",")
+
+comarques_nogeom$length_icgc <- scales::comma(comarques_nogeom$length_icgc/1000,
+                                             big.mark = ".",
+                                             decimal.mark =  ",")
+comarques_nogeom$ratio <- scales::percent(comarques_nogeom$ratio, decimal.mark = ",", accuracy = .01)
+
+tt(comarques_nogeom)
+```
+
+
+## Mapes
+
+```{r}
+#| layout-nrow: 2
+#| layout-ncol: 2
+par(mfrow = c(2,2))
+comarques$length_icgc <- comarques$length_icgc/1000
+comarques$length_osm <- comarques$length_osm/1000
+
+
+plot(comarques["length_icgc"], breaks = "equal",
+     nbreaks = 5,
+     main = "Llargada ICGC", reset = FALSE)
+
+plot(comarques["length_osm"], breaks = "equal",
+     nbreaks = 5,
+     main = "Llargada OSM", reset = FALSE)
+
+plot(comarques["ratio"], breaks = c(0, .25, .5, .75, 1, max(comarques$ratio)),
+     main = "Ràtio OSM/ICGC", reset = FALSE)
+```
+
+
