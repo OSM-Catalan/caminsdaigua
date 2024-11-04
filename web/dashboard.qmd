@@ -22,21 +22,20 @@ comarques <- st_read("https://github.com/OSM-Catalan/caminsdaigua/raw/main/data_
 
 comarques_nogeom <- st_drop_geometry(comarques)
 
-cap <-paste0("Longitud cursos d'aigua ICGC: ", paste(scales::comma(round(sum(comarques_nogeom$length_icgc)/1000, 2),
-                                                       big.mark = ".",
-                                                       decimal.mark =  ","), " km"),"\n",
-      "Longitud cursos d'aigua OSM: ", paste(scales::comma(round(sum(comarques_nogeom$length_osm)/1000, 2),
-                                                       big.mark = ".",
-                                                       decimal.mark =  ","), " km"),"\n",
-      "Percentatge de cursos d'aigua a OSM: ", scales::percent(sum(comarques_nogeom$length_osm)/sum(comarques_nogeom$length_icgc), .01))
 
 ```
 
 
-## Seguiment per comarques
+# Seguiment per comarques
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+
 ```{r}
-#| fig-cap: !expr cap
-#| fig-cap-location: margin
+
 comarques_nogeom$length_osm <- scales::comma(comarques_nogeom$length_osm/1000,
                                              big.mark = ".",
                                              decimal.mark =  ",")
@@ -49,8 +48,37 @@ comarques_nogeom$ratio <- scales::percent(comarques_nogeom$ratio, decimal.mark =
 tt(comarques_nogeom)
 ```
 
+:::
 
-## Mapes
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="20%"}
+```{r}
+#| output: asis
+cat(paste0("Longitud cursos d'aigua ICGC: ", paste(scales::comma(round(sum(comarques$length_icgc)/1000, 2),
+                                                       big.mark = ".",
+                                                       decimal.mark =  ","), " km")))
+```
+```{r}
+#| output: asis
+cat("Longitud cursos d'aigua OSM: ", paste(scales::comma(round(sum(comarques$length_osm)/1000, 2),
+                                                       big.mark = ".",
+                                                       decimal.mark =  ","), " km"))
+```
+```{r}
+#| output: asis
+cat("Percentatge de cursos d'aigua a OSM: ", scales::percent(sum(comarques$length_osm)/sum(comarques$length_icgc), .01))
+```
+
+:::
+
+::::
+
+
+
+# Mapes
 
 ```{r}
 #| layout-nrow: 2
