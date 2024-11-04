@@ -8,7 +8,7 @@ nomcoms <- unique(comarques$NOMCOMAR)
 
 
 get_length_osm <- function(comarca){
-  water_i <- getbb(comarca, format_out = "osm_type_id") |> 
+  water_i <- getbb(comarca, format_out = "osm_type_id", viewbox = c(0.16, 40.53, 3.4, 42.9)) |> 
     opq() |> 
     add_osm_features(list("waterway" = "river",
                           "waterway" = "ditch",
@@ -50,5 +50,5 @@ comarques_web <- comarques[,"NOMCOMAR"] |>
 
 colnames(comarques_web) <- c("comarca", "length_osm", "length_icgc", "geometry")
 comarques_web$ratio <- comarques_web$length_osm/comarques_web$length_icgc
-save(comarques_web, file = "data_web/data_quarto.rda")
+st_write(comarques_web, file = "data_web/data_quarto.geojson")
 
