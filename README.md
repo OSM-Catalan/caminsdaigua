@@ -22,7 +22,7 @@ out meta;
 
 ```
 3) Afegir els cursos que falten amb les etiquetes pertinents (particularment `intermittent=yes`, si escau). Comproveu que els cursos estan connectats quan calgui. Sempre que es pugui, posar túnels i/o guals, quan escaigui. Cal fer les comprovacions pertinents amb l'ortofoto de l'ICGC.
-4) Pujar les dades de mica en mica, intenteu no sobrepassar els 200 elements per cada pujada.
+4) Pujar les dades de mica en mica, intenteu no sobrepassar els 200 elements per cada pujada. Tingueu en compte que la ubicació moltes vegades és aproximada i feta a partir de la capa 1:50.000. En conseqüència, si us plau, reviseu amb l'ortofoto de l'ICGC.
 5) Dubtes, al grup de Telegram. Salut i mapes.
 
 
