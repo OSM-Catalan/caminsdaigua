@@ -31,7 +31,7 @@ comarques_nogeom <- st_drop_geometry(comarques)
 
 :::: {.columns}
 
-::: {.column width="70%"}
+::: {.column width="75%"}
 
 
 ```{r}
@@ -50,7 +50,7 @@ tt(comarques_nogeom)
 
 :::
 
-::: {.column width="10%"}
+::: {.column width="5%"}
 <!-- empty column to create gap -->
 :::
 
