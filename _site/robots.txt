@@ -1,0 +1,1 @@
+Sitemap: https://osm-catalan.github.io/caminsdaigua/sitemap.xml

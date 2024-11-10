@@ -38,11 +38,11 @@ comarques_nogeom <- st_drop_geometry(comarques)
 ```{r}
 
 
-comarques_nogeom$length_osm <- comarques_nogeom$length_osm / 1000 |>
+comarques_nogeom$length_osm <- (comarques_nogeom$length_osm / 1000) |>
   scales::comma(big.mark = ".",
                 decimal.mark =  ",")
 
-comarques_nogeom$length_icgc <- comarques_nogeom$length_icgc / 1000 |>
+comarques_nogeom$length_icgc <- (comarques_nogeom$length_icgc / 1000) |>
   scales::comma(big.mark = ".",
                 decimal.mark =  ",")
 
