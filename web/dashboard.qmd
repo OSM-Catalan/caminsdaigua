@@ -11,8 +11,9 @@ echo: false
 ```{r}
 library(tinytable)
 library(sf)
-
-comarques <- st_read("https://github.com/OSM-Catalan/caminsdaigua/raw/main/data_web/data_quarto.gpkg",quiet = TRUE)
+url <- "https://github.com/OSM-Catalan/caminsdaigua/raw/main/data_web/data_quarto.gpkg"
+comarques <- st_read(url,
+                     quiet = TRUE)
 ```
 
 
@@ -36,14 +37,17 @@ comarques_nogeom <- st_drop_geometry(comarques)
 
 ```{r}
 
-comarques_nogeom$length_osm <- scales::comma(comarques_nogeom$length_osm/1000,
-                                             big.mark = ".",
-                                             decimal.mark =  ",")
 
-comarques_nogeom$length_icgc <- scales::comma(comarques_nogeom$length_icgc/1000,
-                                             big.mark = ".",
-                                             decimal.mark =  ",")
-comarques_nogeom$ratio <- scales::percent(comarques_nogeom$ratio, decimal.mark = ",", accuracy = .01)
+comarques_nogeom$length_osm <- comarques_nogeom$length_osm / 1000 |>
+  scales::comma(big.mark = ".",
+                decimal.mark =  ",")
+
+comarques_nogeom$length_icgc <- comarques_nogeom$length_icgc / 1000 |>
+  scales::comma(big.mark = ".",
+                decimal.mark =  ",")
+
+comarques_nogeom$ratio <- scales::percent(comarques_nogeom$ratio,
+                                          decimal.mark = ",", accuracy = .01)
 
 tt(comarques_nogeom)
 ```
@@ -57,19 +61,27 @@ tt(comarques_nogeom)
 ::: {.column width="20%"}
 ```{r}
 #| output: asis
-cat(paste0("Longitud cursos d'aigua ICGC: ", paste(scales::comma(round(sum(comarques$length_icgc)/1000, 2),
-                                                       big.mark = ".",
-                                                       decimal.mark =  ","), " km")))
+
+licgc <- round(sum(comarques$length_icgc) / 1000, 2)
+cat("Longitud cursos d'aigua ICGC: ", paste(scales::comma(licgc,
+                                                          big.mark = ".",
+                                                          decimal.mark =  ","),
+                                            " km"))
 ```
 ```{r}
 #| output: asis
-cat("Longitud cursos d'aigua OSM: ", paste(scales::comma(round(sum(comarques$length_osm)/1000, 2),
-                                                       big.mark = ".",
-                                                       decimal.mark =  ","), " km"))
+
+losm <- round(sum(comarques$length_osm) / 1000, 2)
+cat("Longitud cursos d'aigua OSM: ", paste(scales::comma(losm,
+                                                         big.mark = ".",
+                                                         decimal.mark =  ","),
+                                           " km"))
 ```
 ```{r}
 #| output: asis
-cat("Percentatge de cursos d'aigua a OSM: ", scales::percent(sum(comarques$length_osm)/sum(comarques$length_icgc), .01))
+
+perc <- sum(comarques$length_osm) / sum(comarques$length_icgc)
+cat("Percentatge de cursos d'aigua a OSM: ", scales::percent(perc, .01))
 ```
 
 :::
@@ -83,9 +95,9 @@ cat("Percentatge de cursos d'aigua a OSM: ", scales::percent(sum(comarques$lengt
 ```{r}
 #| layout-nrow: 2
 #| layout-ncol: 2
-par(mfrow = c(2,2))
-comarques$length_icgc <- comarques$length_icgc/1000
-comarques$length_osm <- comarques$length_osm/1000
+par(mfrow = c(2, 2))
+comarques$length_icgc <- comarques$length_icgc / 1000
+comarques$length_osm <- comarques$length_osm / 1000
 
 
 plot(comarques["length_icgc"], breaks = "equal",
