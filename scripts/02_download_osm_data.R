@@ -6,7 +6,7 @@ comarques <- st_transform(comarques, "EPSG:25831")
 nomcoms <- unique(comarques$NOMCOMAR)
 nomcoms <- sort(nomcoms)
 # download osm ids for all comarques
-
+print("starting to get Comarca ids")
 cids <- getbb("Catalonia", format_out = "osm_type_id") |>
   opq(osm_types = "rel",
       out = "tags") |>
@@ -41,15 +41,16 @@ get_length_osm <- function(comarca, id) {
 
   ls <- as.numeric(st_length(water_i$geometry))
   return(sum(ls))
+  print(paste(comarca, "done"))
 }
 
 
-
+print("starting to get Comarca waterway lengths")
 lengths_osm <- mapply(get_length_osm,
                       cids$name, cids$osm_id)
 
 
-
+print("Comarca waterway lengths downloaded")
 lengths_osm <- data.frame("NOMCOMAR" = cids$name,
                           "length_osm" = as.numeric(lengths_osm))
 
