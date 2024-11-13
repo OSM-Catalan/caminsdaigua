@@ -5,7 +5,7 @@ project:
     - web/*.qmd
 
 website:
-  title: "portals_bcn"
+  title: "caminsdaigua"
   repo-url: https://github.com/OSM-Catalan/caminsdaigua
   repo-actions: [edit, issue]
   site-url: https://osm-catalan.github.io/caminsdaigua/
@@ -13,7 +13,6 @@ website:
 
 format:
   html:
-    theme: lux
     css: styles.css
     toc: true
     lang: ca
