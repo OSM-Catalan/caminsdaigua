@@ -129,12 +129,19 @@ ul.task-list li input[type="checkbox"] {
 <!-- preamble start -->
 
     <script>
-      function styleCell_pnaafzwf3fjitedi3fhi(i, j, css_id) {
-        var table = document.getElementById("tinytable_pnaafzwf3fjitedi3fhi");
-        table.rows[i].cells[j].classList.add(css_id);
+
+      function styleCell_ponbwbj90v67p5png6po(i, j, css_id) {
+          var table = document.getElementById("tinytable_ponbwbj90v67p5png6po");
+          var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_pnaafzwf3fjitedi3fhi');
+        var table = document.getElementById('tinytable_ponbwbj90v67p5png6po');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -142,8 +149,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_pnaafzwf3fjitedi3fhi(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_pnaafzwf3fjitedi3fhi");
+      function spanCell_ponbwbj90v67p5png6po(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_ponbwbj90v67p5png6po");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -169,17 +176,30 @@ ul.task-list li input[type="checkbox"] {
         targetCell.rowSpan = rowspan;
         targetCell.colSpan = colspan;
       }
-window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 0, 'tinytable_css_id9qhv33rb7jgwosihx9f7') })
-window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 1, 'tinytable_css_id9qhv33rb7jgwosihx9f7') })
-window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 2, 'tinytable_css_id9qhv33rb7jgwosihx9f7') })
-window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 3, 'tinytable_css_id9qhv33rb7jgwosihx9f7') })
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_pt9a304p60aaqonh6v12',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_6axp5lw8dkytmrqzuecp',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_ponbwbj90v67p5png6po(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
     </script>
 
     <style>
-    .table td.tinytable_css_id9qhv33rb7jgwosihx9f7, .table th.tinytable_css_id9qhv33rb7jgwosihx9f7 {  border-bottom: solid 0.1em #d3d8dc; }
+      /* tinytable css entries after */
+      .table td.tinytable_css_pt9a304p60aaqonh6v12, .table th.tinytable_css_pt9a304p60aaqonh6v12 { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_6axp5lw8dkytmrqzuecp, .table th.tinytable_css_6axp5lw8dkytmrqzuecp { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_pnaafzwf3fjitedi3fhi" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_ponbwbj90v67p5png6po" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -253,9 +273,9 @@ window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 
                 </tr>
                 <tr>
                   <td>Baix Llobregat   </td>
-                  <td>940,90  </td>
+                  <td>940,84  </td>
                   <td>1.013,61</td>
-                  <td>92,83% </td>
+                  <td>92,82% </td>
                 </tr>
                 <tr>
                   <td>Baix Penedès     </td>
@@ -265,9 +285,9 @@ window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 
                 </tr>
                 <tr>
                   <td>Barcelonès       </td>
-                  <td>161,14  </td>
+                  <td>176,07  </td>
                   <td>273,08  </td>
-                  <td>59,01% </td>
+                  <td>64,48% </td>
                 </tr>
                 <tr>
                   <td>Berguedà         </td>
@@ -415,9 +435,9 @@ window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 
                 </tr>
                 <tr>
                   <td>Tarragonès       </td>
-                  <td>401,59  </td>
+                  <td>423,70  </td>
                   <td>485,16  </td>
-                  <td>82,78% </td>
+                  <td>87,33% </td>
                 </tr>
                 <tr>
                   <td>Terra Alta       </td>
@@ -439,7 +459,7 @@ window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 
                 </tr>
                 <tr>
                   <td>Vallès Occidental</td>
-                  <td>1.320,47</td>
+                  <td>1.320,48</td>
                   <td>1.312,19</td>
                   <td>100,63%</td>
                 </tr>
@@ -459,8 +479,8 @@ window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
 <p>Longitud cursos d’aigua ICGC: 70.302 km</p>
-<p>Longitud cursos d’aigua OSM: 41.375 km</p>
-<p>Percentatge de cursos d’aigua a OSM: 58.85%</p>
+<p>Longitud cursos d’aigua OSM: 41.412 km</p>
+<p>Percentatge de cursos d’aigua a OSM: 58.91%</p>
 </div>
 </div>
 </section>
@@ -469,7 +489,7 @@ window.addEventListener('load', function () { styleCell_pnaafzwf3fjitedi3fhi(0, 
 <div>
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
