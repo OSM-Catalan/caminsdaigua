@@ -111,5 +111,3 @@ plot(comarques["length_osm"], breaks = "equal",
 plot(comarques["ratio"], breaks = c(0, .25, .5, .75, 1, max(comarques$ratio)),
      main = "Ràtio OSM/ICGC", reset = FALSE)
 ```
-
-
