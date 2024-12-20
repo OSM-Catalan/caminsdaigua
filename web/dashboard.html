@@ -133,8 +133,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_cghat634wld069cdhmn0(i, j, css_id) {
-          var table = document.getElementById("tinytable_cghat634wld069cdhmn0");
+      function styleCell_wqt2fm47h7ajc2b11aej(i, j, css_id) {
+          var table = document.getElementById("tinytable_wqt2fm47h7ajc2b11aej");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_cghat634wld069cdhmn0');
+        var table = document.getElementById('tinytable_wqt2fm47h7ajc2b11aej');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -152,8 +152,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_cghat634wld069cdhmn0(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_cghat634wld069cdhmn0");
+      function spanCell_wqt2fm47h7ajc2b11aej(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_wqt2fm47h7ajc2b11aej");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -183,14 +183,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_m91i3v69933cnft4dtla',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_kuwkref279qwfpfzb0vx',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_qdm7z7nkj6tpumut493s',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_18agmq69b2xftdluo6m8',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_cghat634wld069cdhmn0(cell.i, cell.j, group.css_id);
+                  styleCell_wqt2fm47h7ajc2b11aej(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -198,11 +198,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_m91i3v69933cnft4dtla, .table th.tinytable_css_m91i3v69933cnft4dtla { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_kuwkref279qwfpfzb0vx, .table th.tinytable_css_kuwkref279qwfpfzb0vx { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_qdm7z7nkj6tpumut493s, .table th.tinytable_css_qdm7z7nkj6tpumut493s { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_18agmq69b2xftdluo6m8, .table th.tinytable_css_18agmq69b2xftdluo6m8 { border-bottom: solid #d3d8dc 0.1em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_cghat634wld069cdhmn0" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_wqt2fm47h7ajc2b11aej" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -216,9 +216,9 @@ ul.task-list li input[type="checkbox"] {
         <tbody>
                 <tr>
                   <td>Alt Camp         </td>
-                  <td>510,61  </td>
+                  <td>516,18  </td>
                   <td>1.142,06</td>
-                  <td>44,71% </td>
+                  <td>45,20% </td>
                 </tr>
                 <tr>
                   <td>Alt Empordà      </td>
@@ -258,15 +258,15 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Baix Camp        </td>
-                  <td>1.005,75</td>
+                  <td>1.024,23</td>
                   <td>1.647,60</td>
-                  <td>61,04% </td>
+                  <td>62,16% </td>
                 </tr>
                 <tr>
                   <td>Baix Ebre        </td>
-                  <td>1.253,16</td>
+                  <td>1.258,08</td>
                   <td>2.261,28</td>
-                  <td>55,42% </td>
+                  <td>55,64% </td>
                 </tr>
                 <tr>
                   <td>Baix Empordà     </td>
@@ -306,9 +306,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Conca de Barberà </td>
-                  <td>583,96  </td>
+                  <td>584,49  </td>
                   <td>1.437,71</td>
-                  <td>40,62% </td>
+                  <td>40,65% </td>
                 </tr>
                 <tr>
                   <td>Garraf           </td>
@@ -348,15 +348,15 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Moianès          </td>
-                  <td>418,50  </td>
+                  <td>418,51  </td>
                   <td>821,29  </td>
                   <td>50,96% </td>
                 </tr>
                 <tr>
                   <td>Montsià          </td>
-                  <td>987,78  </td>
+                  <td>988,48  </td>
                   <td>1.110,86</td>
-                  <td>88,92% </td>
+                  <td>88,98% </td>
                 </tr>
                 <tr>
                   <td>Noguera          </td>
@@ -402,9 +402,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Ribera d'Ebre    </td>
-                  <td>448,44  </td>
+                  <td>453,23  </td>
                   <td>2.180,47</td>
-                  <td>20,57% </td>
+                  <td>20,79% </td>
                 </tr>
                 <tr>
                   <td>Ripollès         </td>
@@ -462,9 +462,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Vallès Occidental</td>
-                  <td>1.326,47</td>
+                  <td>1.329,39</td>
                   <td>1.312,19</td>
-                  <td>101,09%</td>
+                  <td>101,31%</td>
                 </tr>
                 <tr>
                   <td>Vallès Oriental  </td>
@@ -482,8 +482,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
 <p>Longitud cursos d’aigua ICGC: 70.302 km</p>
-<p>Longitud cursos d’aigua OSM: 41.817 km</p>
-<p>Percentatge de cursos d’aigua a OSM: 59.48%</p>
+<p>Longitud cursos d’aigua OSM: 41.855 km</p>
+<p>Percentatge de cursos d’aigua a OSM: 59.54%</p>
 </div>
 </div>
 </section>
@@ -492,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
