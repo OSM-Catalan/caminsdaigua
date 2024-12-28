@@ -133,8 +133,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_uygsv308uwdewttht50l(i, j, css_id) {
-          var table = document.getElementById("tinytable_uygsv308uwdewttht50l");
+      function styleCell_qbg17ojy3i5mluwoxao7(i, j, css_id) {
+          var table = document.getElementById("tinytable_qbg17ojy3i5mluwoxao7");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_uygsv308uwdewttht50l');
+        var table = document.getElementById('tinytable_qbg17ojy3i5mluwoxao7');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -152,8 +152,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_uygsv308uwdewttht50l(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_uygsv308uwdewttht50l");
+      function spanCell_qbg17ojy3i5mluwoxao7(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_qbg17ojy3i5mluwoxao7");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -183,14 +183,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_k2y41oq2sz9cuy0up7b3',}, 
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_3i9rumqmmjgoawjs9bjo',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_pvo4o4kuditnzyzz8u3u',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_msp74w3f90tooqle78up',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_uygsv308uwdewttht50l(cell.i, cell.j, group.css_id);
+                  styleCell_qbg17ojy3i5mluwoxao7(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -198,11 +198,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_k2y41oq2sz9cuy0up7b3, .table th.tinytable_css_k2y41oq2sz9cuy0up7b3 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
-      .table td.tinytable_css_3i9rumqmmjgoawjs9bjo, .table th.tinytable_css_3i9rumqmmjgoawjs9bjo { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_pvo4o4kuditnzyzz8u3u, .table th.tinytable_css_pvo4o4kuditnzyzz8u3u { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_msp74w3f90tooqle78up, .table th.tinytable_css_msp74w3f90tooqle78up { border-bottom: solid #d3d8dc 0.1em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_uygsv308uwdewttht50l" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_qbg17ojy3i5mluwoxao7" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -234,9 +234,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Alt Urgell       </td>
-                  <td>1.951,50</td>
+                  <td>1.955,37</td>
                   <td>3.875,76</td>
-                  <td>50,35% </td>
+                  <td>50,45% </td>
                 </tr>
                 <tr>
                   <td>Alta Ribagorça   </td>
@@ -258,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Baix Camp        </td>
-                  <td>1.027,69</td>
+                  <td>1.027,67</td>
                   <td>1.647,60</td>
                   <td>62,37% </td>
                 </tr>
@@ -432,9 +432,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Solsonès         </td>
-                  <td>1.022,53</td>
+                  <td>1.035,78</td>
                   <td>2.670,21</td>
-                  <td>38,29% </td>
+                  <td>38,79% </td>
                 </tr>
                 <tr>
                   <td>Tarragonès       </td>
@@ -468,7 +468,7 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Vallès Oriental  </td>
-                  <td>1.933,67</td>
+                  <td>1.933,74</td>
                   <td>1.664,54</td>
                   <td>116,17%</td>
                 </tr>
@@ -482,8 +482,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
 <p>Longitud cursos d’aigua ICGC: 70.302 km</p>
-<p>Longitud cursos d’aigua OSM: 41.874 km</p>
-<p>Percentatge de cursos d’aigua a OSM: 59.56%</p>
+<p>Longitud cursos d’aigua OSM: 41.891 km</p>
+<p>Percentatge de cursos d’aigua a OSM: 59.59%</p>
 </div>
 </div>
 </section>
