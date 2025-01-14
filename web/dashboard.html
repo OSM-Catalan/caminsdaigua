@@ -133,8 +133,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_juzv38uufnzbsexzqka1(i, j, css_id) {
-          var table = document.getElementById("tinytable_juzv38uufnzbsexzqka1");
+      function styleCell_nrq1uxsodlogurtw08w3(i, j, css_id) {
+          var table = document.getElementById("tinytable_nrq1uxsodlogurtw08w3");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_juzv38uufnzbsexzqka1');
+        var table = document.getElementById('tinytable_nrq1uxsodlogurtw08w3');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -152,8 +152,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_juzv38uufnzbsexzqka1(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_juzv38uufnzbsexzqka1");
+      function spanCell_nrq1uxsodlogurtw08w3(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_nrq1uxsodlogurtw08w3");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -183,14 +183,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_mq29jo29usr1wal6c9pu',}, 
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_9qexgukxbejzjtpztkkk',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_n428zomin6j87o9758wx',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_18x1uuyerze516xg7mcp',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_juzv38uufnzbsexzqka1(cell.i, cell.j, group.css_id);
+                  styleCell_nrq1uxsodlogurtw08w3(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -198,11 +198,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_mq29jo29usr1wal6c9pu, .table th.tinytable_css_mq29jo29usr1wal6c9pu { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
-      .table td.tinytable_css_9qexgukxbejzjtpztkkk, .table th.tinytable_css_9qexgukxbejzjtpztkkk { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_n428zomin6j87o9758wx, .table th.tinytable_css_n428zomin6j87o9758wx { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_18x1uuyerze516xg7mcp, .table th.tinytable_css_18x1uuyerze516xg7mcp { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_juzv38uufnzbsexzqka1" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_nrq1uxsodlogurtw08w3" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -228,9 +228,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Alt Penedès      </td>
-                  <td>779,42  </td>
+                  <td>781,13  </td>
                   <td>1.369,05</td>
-                  <td>56,93% </td>
+                  <td>57,06% </td>
                 </tr>
                 <tr>
                   <td>Alt Urgell       </td>
@@ -246,21 +246,21 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Anoia            </td>
-                  <td>982,74  </td>
+                  <td>982,95  </td>
                   <td>2.075,36</td>
-                  <td>47,35% </td>
+                  <td>47,36% </td>
                 </tr>
                 <tr>
                   <td>Bages            </td>
-                  <td>1.768,17</td>
+                  <td>1.769,55</td>
                   <td>2.693,75</td>
-                  <td>65,64% </td>
+                  <td>65,69% </td>
                 </tr>
                 <tr>
                   <td>Baix Camp        </td>
-                  <td>1.088,71</td>
+                  <td>1.090,60</td>
                   <td>1.647,60</td>
-                  <td>66,08% </td>
+                  <td>66,19% </td>
                 </tr>
                 <tr>
                   <td>Baix Ebre        </td>
@@ -276,15 +276,15 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Baix Llobregat   </td>
-                  <td>952,75  </td>
+                  <td>954,14  </td>
                   <td>1.013,61</td>
-                  <td>94,00% </td>
+                  <td>94,13% </td>
                 </tr>
                 <tr>
                   <td>Baix Penedès     </td>
-                  <td>350,24  </td>
+                  <td>350,93  </td>
                   <td>690,56  </td>
-                  <td>50,72% </td>
+                  <td>50,82% </td>
                 </tr>
                 <tr>
                   <td>Barcelonès       </td>
@@ -294,9 +294,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Berguedà         </td>
-                  <td>1.457,98</td>
+                  <td>1.459,34</td>
                   <td>2.877,05</td>
-                  <td>50,68% </td>
+                  <td>50,72% </td>
                 </tr>
                 <tr>
                   <td>Cerdanya         </td>
@@ -324,9 +324,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Garrotxa         </td>
-                  <td>1.554,01</td>
+                  <td>1.554,92</td>
                   <td>1.899,53</td>
-                  <td>81,81% </td>
+                  <td>81,86% </td>
                 </tr>
                 <tr>
                   <td>Gironès          </td>
@@ -348,15 +348,15 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Moianès          </td>
-                  <td>418,49  </td>
+                  <td>419,08  </td>
                   <td>821,29  </td>
-                  <td>50,96% </td>
+                  <td>51,03% </td>
                 </tr>
                 <tr>
                   <td>Montsià          </td>
-                  <td>988,48  </td>
+                  <td>990,66  </td>
                   <td>1.110,86</td>
-                  <td>88,98% </td>
+                  <td>89,18% </td>
                 </tr>
                 <tr>
                   <td>Noguera          </td>
@@ -366,13 +366,13 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Osona            </td>
-                  <td>2.084,66</td>
+                  <td>2.085,21</td>
                   <td>2.228,27</td>
-                  <td>93,55% </td>
+                  <td>93,58% </td>
                 </tr>
                 <tr>
                   <td>Pallars Jussà    </td>
-                  <td>1.716,63</td>
+                  <td>1.716,64</td>
                   <td>3.477,89</td>
                   <td>49,36% </td>
                 </tr>
@@ -426,9 +426,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Selva            </td>
-                  <td>1.635,22</td>
+                  <td>1.639,51</td>
                   <td>2.510,41</td>
-                  <td>65,14% </td>
+                  <td>65,31% </td>
                 </tr>
                 <tr>
                   <td>Solsonès         </td>
@@ -438,7 +438,7 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Tarragonès       </td>
-                  <td>493,48  </td>
+                  <td>493,49  </td>
                   <td>485,16  </td>
                   <td>101,72%</td>
                 </tr>
@@ -462,15 +462,15 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Vallès Occidental</td>
-                  <td>1.346,93</td>
+                  <td>1.348,80</td>
                   <td>1.312,19</td>
-                  <td>102,65%</td>
+                  <td>102,79%</td>
                 </tr>
                 <tr>
                   <td>Vallès Oriental  </td>
-                  <td>1.934,43</td>
+                  <td>1.936,07</td>
                   <td>1.664,54</td>
-                  <td>116,21%</td>
+                  <td>116,31%</td>
                 </tr>
         </tbody>
       </table>
@@ -482,8 +482,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
 <p>Longitud cursos d’aigua ICGC: 70.302 km</p>
-<p>Longitud cursos d’aigua OSM: 42.116 km</p>
-<p>Percentatge de cursos d’aigua a OSM: 59.91%</p>
+<p>Longitud cursos d’aigua OSM: 42.136 km</p>
+<p>Percentatge de cursos d’aigua a OSM: 59.94%</p>
 </div>
 </div>
 </section>
@@ -492,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
