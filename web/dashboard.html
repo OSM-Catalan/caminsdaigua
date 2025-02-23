@@ -133,8 +133,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_gc0evm6246j1c4vi69v4(i, j, css_id) {
-          var table = document.getElementById("tinytable_gc0evm6246j1c4vi69v4");
+      function styleCell_2ccrkuqlbirf8jhw8r98(i, j, css_id) {
+          var table = document.getElementById("tinytable_2ccrkuqlbirf8jhw8r98");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_gc0evm6246j1c4vi69v4');
+        var table = document.getElementById('tinytable_2ccrkuqlbirf8jhw8r98');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -152,8 +152,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_gc0evm6246j1c4vi69v4(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_gc0evm6246j1c4vi69v4");
+      function spanCell_2ccrkuqlbirf8jhw8r98(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_2ccrkuqlbirf8jhw8r98");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -183,14 +183,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_i03q7sq2yqzijzemjus5',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_10ioa44tzhsu3qmbck6r',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_70qkov7fzzngjc5r7hr4',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_53dunit2g3t84pu3imqd',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_gc0evm6246j1c4vi69v4(cell.i, cell.j, group.css_id);
+                  styleCell_2ccrkuqlbirf8jhw8r98(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -198,11 +198,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_i03q7sq2yqzijzemjus5, .table th.tinytable_css_i03q7sq2yqzijzemjus5 { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_10ioa44tzhsu3qmbck6r, .table th.tinytable_css_10ioa44tzhsu3qmbck6r { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_70qkov7fzzngjc5r7hr4, .table th.tinytable_css_70qkov7fzzngjc5r7hr4 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_53dunit2g3t84pu3imqd, .table th.tinytable_css_53dunit2g3t84pu3imqd { border-bottom: solid #d3d8dc 0.1em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_gc0evm6246j1c4vi69v4" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_2ccrkuqlbirf8jhw8r98" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -216,9 +216,9 @@ ul.task-list li input[type="checkbox"] {
         <tbody>
                 <tr>
                   <td>Alt Camp</td>
-                  <td>553,93</td>
+                  <td>554,78</td>
                   <td>1.142,06</td>
-                  <td>48,50%</td>
+                  <td>48,58%</td>
                 </tr>
                 <tr>
                   <td>Alt Empordà</td>
@@ -228,9 +228,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Alt Penedès</td>
-                  <td>789,59</td>
+                  <td>789,61</td>
                   <td>1.369,05</td>
-                  <td>57,67%</td>
+                  <td>57,68%</td>
                 </tr>
                 <tr>
                   <td>Alt Urgell</td>
@@ -258,9 +258,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Baix Camp</td>
-                  <td>1.234,03</td>
+                  <td>1.234,41</td>
                   <td>1.647,60</td>
-                  <td>74,90%</td>
+                  <td>74,92%</td>
                 </tr>
                 <tr>
                   <td>Baix Ebre</td>
@@ -306,9 +306,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Conca de Barberà</td>
-                  <td>609,94</td>
+                  <td>611,41</td>
                   <td>1.437,71</td>
-                  <td>42,42%</td>
+                  <td>42,53%</td>
                 </tr>
                 <tr>
                   <td>Garraf</td>
@@ -482,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
 <p>Longitud cursos d’aigua ICGC: 70.302 km</p>
-<p>Longitud cursos d’aigua OSM: 42.573 km</p>
+<p>Longitud cursos d’aigua OSM: 42.575 km</p>
 <p>Percentatge de cursos d’aigua a OSM: 60.56%</p>
 </div>
 </div>
@@ -492,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
