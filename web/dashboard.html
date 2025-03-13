@@ -133,8 +133,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_9809ra47n66vnjf6emsv(i, j, css_id) {
-          var table = document.getElementById("tinytable_9809ra47n66vnjf6emsv");
+      function styleCell_cfu3vzf4tx06b2py68bc(i, j, css_id) {
+          var table = document.getElementById("tinytable_cfu3vzf4tx06b2py68bc");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_9809ra47n66vnjf6emsv');
+        var table = document.getElementById('tinytable_cfu3vzf4tx06b2py68bc');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -152,8 +152,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_9809ra47n66vnjf6emsv(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_9809ra47n66vnjf6emsv");
+      function spanCell_cfu3vzf4tx06b2py68bc(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_cfu3vzf4tx06b2py68bc");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -183,14 +183,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_nql5n2xue44304rbg1g5',}, 
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_g1nq2k2rq4pw10w85n4l',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_iwouyc8gbtcvkz4bkkcy',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_ccknaw1ozj5sciioq36b',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_9809ra47n66vnjf6emsv(cell.i, cell.j, group.css_id);
+                  styleCell_cfu3vzf4tx06b2py68bc(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -198,11 +198,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_nql5n2xue44304rbg1g5, .table th.tinytable_css_nql5n2xue44304rbg1g5 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
-      .table td.tinytable_css_g1nq2k2rq4pw10w85n4l, .table th.tinytable_css_g1nq2k2rq4pw10w85n4l { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_iwouyc8gbtcvkz4bkkcy, .table th.tinytable_css_iwouyc8gbtcvkz4bkkcy { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_ccknaw1ozj5sciioq36b, .table th.tinytable_css_ccknaw1ozj5sciioq36b { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_9809ra47n66vnjf6emsv" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_cfu3vzf4tx06b2py68bc" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -216,259 +216,259 @@ ul.task-list li input[type="checkbox"] {
         <tbody>
                 <tr>
                   <td>Alt Camp</td>
-                  <td>562,24</td>
+                  <td>562,2</td>
                   <td>1.142,06</td>
                   <td>49,23%</td>
                 </tr>
                 <tr>
                   <td>Alt Empordà</td>
-                  <td>1.900,37</td>
+                  <td>1.901,3</td>
                   <td>2.640,15</td>
-                  <td>71,98%</td>
+                  <td>72,01%</td>
                 </tr>
                 <tr>
                   <td>Alt Penedès</td>
-                  <td>789,64</td>
+                  <td>792,0</td>
                   <td>1.369,05</td>
-                  <td>57,68%</td>
+                  <td>57,85%</td>
                 </tr>
                 <tr>
                   <td>Alt Urgell</td>
-                  <td>1.958,63</td>
+                  <td>1.958,6</td>
                   <td>3.875,76</td>
                   <td>50,54%</td>
                 </tr>
                 <tr>
                   <td>Alta Ribagorça</td>
-                  <td>588,63</td>
+                  <td>588,6</td>
                   <td>1.323,30</td>
                   <td>44,48%</td>
                 </tr>
                 <tr>
                   <td>Anoia</td>
-                  <td>995,21</td>
+                  <td>1.030,1</td>
                   <td>2.075,36</td>
-                  <td>47,95%</td>
+                  <td>49,63%</td>
                 </tr>
                 <tr>
                   <td>Bages</td>
-                  <td>1.773,75</td>
+                  <td>1.773,8</td>
                   <td>2.693,75</td>
                   <td>65,85%</td>
                 </tr>
                 <tr>
                   <td>Baix Camp</td>
-                  <td>1.293,89</td>
+                  <td>1.296,5</td>
                   <td>1.647,60</td>
-                  <td>78,53%</td>
+                  <td>78,69%</td>
                 </tr>
                 <tr>
                   <td>Baix Ebre</td>
-                  <td>1.275,39</td>
+                  <td>1.275,4</td>
                   <td>2.261,28</td>
                   <td>56,40%</td>
                 </tr>
                 <tr>
                   <td>Baix Empordà</td>
-                  <td>788,23</td>
+                  <td>788,7</td>
                   <td>1.141,72</td>
-                  <td>69,04%</td>
+                  <td>69,08%</td>
                 </tr>
                 <tr>
                   <td>Baix Llobregat</td>
-                  <td>973,15</td>
+                  <td>973,2</td>
                   <td>1.013,61</td>
                   <td>96,01%</td>
                 </tr>
                 <tr>
                   <td>Baix Penedès</td>
-                  <td>359,77</td>
+                  <td>359,8</td>
                   <td>690,56</td>
                   <td>52,10%</td>
                 </tr>
                 <tr>
                   <td>Barcelonès</td>
-                  <td>223,96</td>
+                  <td>224,0</td>
                   <td>273,08</td>
                   <td>82,01%</td>
                 </tr>
                 <tr>
                   <td>Berguedà</td>
-                  <td>1.463,91</td>
+                  <td>1.465,7</td>
                   <td>2.877,05</td>
-                  <td>50,88%</td>
+                  <td>50,95%</td>
                 </tr>
                 <tr>
                   <td>Cerdanya</td>
-                  <td>932,12</td>
+                  <td>932,1</td>
                   <td>1.192,22</td>
                   <td>78,18%</td>
                 </tr>
                 <tr>
                   <td>Conca de Barberà</td>
-                  <td>626,37</td>
+                  <td>626,4</td>
                   <td>1.437,71</td>
                   <td>43,57%</td>
                 </tr>
                 <tr>
                   <td>Garraf</td>
-                  <td>338,24</td>
+                  <td>338,5</td>
                   <td>451,17</td>
-                  <td>74,97%</td>
+                  <td>75,02%</td>
                 </tr>
                 <tr>
                   <td>Garrigues</td>
-                  <td>235,11</td>
+                  <td>235,1</td>
                   <td>1.332,94</td>
                   <td>17,64%</td>
                 </tr>
                 <tr>
                   <td>Garrotxa</td>
-                  <td>1.559,86</td>
+                  <td>1.559,9</td>
                   <td>1.899,53</td>
                   <td>82,12%</td>
                 </tr>
                 <tr>
                   <td>Gironès</td>
-                  <td>760,99</td>
+                  <td>761,0</td>
                   <td>1.150,84</td>
                   <td>66,12%</td>
                 </tr>
                 <tr>
                   <td>Lluçanès</td>
-                  <td>216,02</td>
+                  <td>216,0</td>
                   <td>571,35</td>
                   <td>37,81%</td>
                 </tr>
                 <tr>
                   <td>Maresme</td>
-                  <td>1.254,74</td>
+                  <td>1.254,7</td>
                   <td>916,68</td>
                   <td>136,88%</td>
                 </tr>
                 <tr>
                   <td>Moianès</td>
-                  <td>420,23</td>
+                  <td>420,3</td>
                   <td>821,29</td>
                   <td>51,17%</td>
                 </tr>
                 <tr>
                   <td>Montsià</td>
-                  <td>994,84</td>
+                  <td>994,8</td>
                   <td>1.110,86</td>
                   <td>89,56%</td>
                 </tr>
                 <tr>
                   <td>Noguera</td>
-                  <td>1.178,58</td>
+                  <td>1.179,5</td>
                   <td>3.271,01</td>
-                  <td>36,03%</td>
+                  <td>36,06%</td>
                 </tr>
                 <tr>
                   <td>Osona</td>
-                  <td>2.085,73</td>
+                  <td>2.085,9</td>
                   <td>2.228,27</td>
-                  <td>93,60%</td>
+                  <td>93,61%</td>
                 </tr>
                 <tr>
                   <td>Pallars Jussà</td>
-                  <td>1.731,96</td>
+                  <td>1.732,0</td>
                   <td>3.477,89</td>
                   <td>49,80%</td>
                 </tr>
                 <tr>
                   <td>Pallars Sobirà</td>
-                  <td>2.047,53</td>
+                  <td>2.049,0</td>
                   <td>3.450,59</td>
-                  <td>59,34%</td>
+                  <td>59,38%</td>
                 </tr>
                 <tr>
                   <td>Pla d'Urgell</td>
-                  <td>157,79</td>
+                  <td>157,8</td>
                   <td>164,75</td>
                   <td>95,77%</td>
                 </tr>
                 <tr>
                   <td>Pla de l'Estany</td>
-                  <td>459,14</td>
+                  <td>459,1</td>
                   <td>570,34</td>
                   <td>80,50%</td>
                 </tr>
                 <tr>
                   <td>Priorat</td>
-                  <td>638,35</td>
+                  <td>638,9</td>
                   <td>1.339,08</td>
-                  <td>47,67%</td>
+                  <td>47,71%</td>
                 </tr>
                 <tr>
                   <td>Ribera d'Ebre</td>
-                  <td>583,60</td>
+                  <td>583,6</td>
                   <td>2.180,47</td>
                   <td>26,76%</td>
                 </tr>
                 <tr>
                   <td>Ripollès</td>
-                  <td>1.755,90</td>
+                  <td>1.756,3</td>
                   <td>2.221,60</td>
-                  <td>79,04%</td>
+                  <td>79,06%</td>
                 </tr>
                 <tr>
                   <td>Segarra</td>
-                  <td>122,93</td>
+                  <td>122,9</td>
                   <td>1.003,11</td>
                   <td>12,25%</td>
                 </tr>
                 <tr>
                   <td>Segrià</td>
-                  <td>785,49</td>
+                  <td>785,7</td>
                   <td>1.712,23</td>
-                  <td>45,88%</td>
+                  <td>45,89%</td>
                 </tr>
                 <tr>
                   <td>Selva</td>
-                  <td>1.639,51</td>
+                  <td>1.639,5</td>
                   <td>2.510,41</td>
                   <td>65,31%</td>
                 </tr>
                 <tr>
                   <td>Solsonès</td>
-                  <td>1.067,41</td>
+                  <td>1.067,7</td>
                   <td>2.670,21</td>
-                  <td>39,97%</td>
+                  <td>39,98%</td>
                 </tr>
                 <tr>
                   <td>Tarragonès</td>
-                  <td>493,75</td>
+                  <td>493,7</td>
                   <td>485,16</td>
                   <td>101,77%</td>
                 </tr>
                 <tr>
                   <td>Terra Alta</td>
-                  <td>556,74</td>
+                  <td>556,7</td>
                   <td>1.844,55</td>
                   <td>30,18%</td>
                 </tr>
                 <tr>
                   <td>Urgell</td>
-                  <td>322,60</td>
+                  <td>322,6</td>
                   <td>699,34</td>
                   <td>46,13%</td>
                 </tr>
                 <tr>
                   <td>Val d'Aran</td>
-                  <td>1.580,17</td>
+                  <td>1.580,2</td>
                   <td>1.586,99</td>
                   <td>99,57%</td>
                 </tr>
                 <tr>
                   <td>Vallès Occidental</td>
-                  <td>1.360,33</td>
+                  <td>1.360,5</td>
                   <td>1.312,19</td>
-                  <td>103,67%</td>
+                  <td>103,68%</td>
                 </tr>
                 <tr>
                   <td>Vallès Oriental</td>
-                  <td>1.936,63</td>
+                  <td>1.936,6</td>
                   <td>1.664,54</td>
                   <td>116,35%</td>
                 </tr>
@@ -482,8 +482,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
 <p>Longitud cursos d’aigua ICGC: 70.302 km</p>
-<p>Longitud cursos d’aigua OSM: 42.789 km</p>
-<p>Percentatge de cursos d’aigua a OSM: 60.87%</p>
+<p>Longitud cursos d’aigua OSM: 42.837 km</p>
+<p>Percentatge de cursos d’aigua a OSM: 60.93%</p>
 </div>
 </div>
 </section>
@@ -492,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
