@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_958sskdmbmfh3rjx0hcb(i, j, css_id) {
-          var table = document.getElementById("tinytable_958sskdmbmfh3rjx0hcb");
+      function styleCell_nbqgr6g99jzn44lamnd5(i, j, css_id) {
+          var table = document.getElementById("tinytable_nbqgr6g99jzn44lamnd5");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_958sskdmbmfh3rjx0hcb');
+        var table = document.getElementById('tinytable_nbqgr6g99jzn44lamnd5');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -153,8 +153,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_958sskdmbmfh3rjx0hcb(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_958sskdmbmfh3rjx0hcb");
+      function spanCell_nbqgr6g99jzn44lamnd5(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_nbqgr6g99jzn44lamnd5");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -184,14 +184,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_phnkv77mn6l1a2uw60a1',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_ov4w7ks5bbuhj59rsnbr',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_8t6sewdx8px7yjaye21s',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_g77s0bktjhj8xqpt5yz9',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_958sskdmbmfh3rjx0hcb(cell.i, cell.j, group.css_id);
+                  styleCell_nbqgr6g99jzn44lamnd5(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -199,11 +199,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_phnkv77mn6l1a2uw60a1, .table th.tinytable_css_phnkv77mn6l1a2uw60a1 { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_ov4w7ks5bbuhj59rsnbr, .table th.tinytable_css_ov4w7ks5bbuhj59rsnbr { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_8t6sewdx8px7yjaye21s, .table th.tinytable_css_8t6sewdx8px7yjaye21s { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_g77s0bktjhj8xqpt5yz9, .table th.tinytable_css_g77s0bktjhj8xqpt5yz9 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_958sskdmbmfh3rjx0hcb" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_nbqgr6g99jzn44lamnd5" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -235,9 +235,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Alt Urgell</td>
-                  <td>1.983,8</td>
+                  <td>1.990,1</td>
                   <td>3.875,76</td>
-                  <td>51,19%</td>
+                  <td>51,35%</td>
                 </tr>
                 <tr>
                   <td>Alta Ribagorça</td>
@@ -315,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
                   <td>Garraf</td>
                   <td>338,5</td>
                   <td>451,17</td>
-                  <td>75,02%</td>
+                  <td>75,03%</td>
                 </tr>
                 <tr>
                   <td>Garrigues</td>
@@ -373,9 +373,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Pallars Jussà</td>
-                  <td>1.855,3</td>
+                  <td>1.855,9</td>
                   <td>3.477,89</td>
-                  <td>53,35%</td>
+                  <td>53,36%</td>
                 </tr>
                 <tr>
                   <td>Pallars Sobirà</td>
@@ -445,9 +445,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Terra Alta</td>
-                  <td>578,0</td>
+                  <td>577,1</td>
                   <td>1.844,55</td>
-                  <td>31,33%</td>
+                  <td>31,29%</td>
                 </tr>
                 <tr>
                   <td>Urgell</td>
@@ -482,13 +482,13 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:5%;">
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
-<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.396 km Percentatge de cursos d’aigua a OSM: 61.73%</p>
+<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.402 km Percentatge de cursos d’aigua a OSM: 61.74%</p>
 </div>
 </div>
 </section>
 <section id="mapes" class="level1">
 <h1>Mapes</h1>
-<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
+<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
