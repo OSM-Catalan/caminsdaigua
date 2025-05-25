@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_tcgb0w98vrhso9iskprb(i, j, css_id) {
-          var table = document.getElementById("tinytable_tcgb0w98vrhso9iskprb");
+      function styleCell_mn8hmtbdoxpr52o73soq(i, j, css_id) {
+          var table = document.getElementById("tinytable_mn8hmtbdoxpr52o73soq");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_tcgb0w98vrhso9iskprb');
+        var table = document.getElementById('tinytable_mn8hmtbdoxpr52o73soq');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -153,8 +153,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_tcgb0w98vrhso9iskprb(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_tcgb0w98vrhso9iskprb");
+      function spanCell_mn8hmtbdoxpr52o73soq(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_mn8hmtbdoxpr52o73soq");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -184,14 +184,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_f7ejwa5v22bdq4i2kk5t',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_nocp4c1ze3q9hol3d24i',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_61irxir7yd7ceob1bcuz',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_2lc6s5zx05bhug1ey8t6',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_tcgb0w98vrhso9iskprb(cell.i, cell.j, group.css_id);
+                  styleCell_mn8hmtbdoxpr52o73soq(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -199,11 +199,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_f7ejwa5v22bdq4i2kk5t, .table th.tinytable_css_f7ejwa5v22bdq4i2kk5t { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_nocp4c1ze3q9hol3d24i, .table th.tinytable_css_nocp4c1ze3q9hol3d24i { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_61irxir7yd7ceob1bcuz, .table th.tinytable_css_61irxir7yd7ceob1bcuz { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_2lc6s5zx05bhug1ey8t6, .table th.tinytable_css_2lc6s5zx05bhug1ey8t6 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_tcgb0w98vrhso9iskprb" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_mn8hmtbdoxpr52o73soq" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -488,7 +488,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="mapes" class="level1">
 <h1>Mapes</h1>
-<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
