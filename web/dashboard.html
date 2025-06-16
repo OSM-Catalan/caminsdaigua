@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_y0ltpvkyhipotegpis35(i, j, css_id) {
-          var table = document.getElementById("tinytable_y0ltpvkyhipotegpis35");
+      function styleCell_of5jniihrfwwcab00xrn(i, j, css_id) {
+          var table = document.getElementById("tinytable_of5jniihrfwwcab00xrn");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_y0ltpvkyhipotegpis35');
+        var table = document.getElementById('tinytable_of5jniihrfwwcab00xrn');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -153,8 +153,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_y0ltpvkyhipotegpis35(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_y0ltpvkyhipotegpis35");
+      function spanCell_of5jniihrfwwcab00xrn(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_of5jniihrfwwcab00xrn");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -184,14 +184,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_zz4pqfah5hpu4lc5k8do',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_4h9dy06oy39c3me0jb1b',}, 
+          { positions: [ { i: 43, j: 0 }, { i: 43, j: 1 }, { i: 43, j: 2 }, { i: 43, j: 3 },  ], css_id: 'tinytable_css_bxqj4h7cksltjf3ohiw4',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 },  ], css_id: 'tinytable_css_la99i8v69dmh5st4kqj1',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_y0ltpvkyhipotegpis35(cell.i, cell.j, group.css_id);
+                  styleCell_of5jniihrfwwcab00xrn(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -199,11 +199,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_zz4pqfah5hpu4lc5k8do, .table th.tinytable_css_zz4pqfah5hpu4lc5k8do { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_4h9dy06oy39c3me0jb1b, .table th.tinytable_css_4h9dy06oy39c3me0jb1b { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_bxqj4h7cksltjf3ohiw4, .table th.tinytable_css_bxqj4h7cksltjf3ohiw4 { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_la99i8v69dmh5st4kqj1, .table th.tinytable_css_la99i8v69dmh5st4kqj1 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_y0ltpvkyhipotegpis35" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_of5jniihrfwwcab00xrn" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -259,15 +259,15 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Baix Camp</td>
-                  <td>1.437,2</td>
+                  <td>1.438,9</td>
                   <td>1.647,60</td>
-                  <td>87,23%</td>
+                  <td>87,34%</td>
                 </tr>
                 <tr>
                   <td>Baix Ebre</td>
                   <td>1.308,7</td>
                   <td>2.261,28</td>
-                  <td>57,87%</td>
+                  <td>57,88%</td>
                 </tr>
                 <tr>
                   <td>Baix Empordà</td>
@@ -289,9 +289,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td>Barcelonès</td>
-                  <td>231,4</td>
+                  <td>232,2</td>
                   <td>273,08</td>
-                  <td>84,73%</td>
+                  <td>85,02%</td>
                 </tr>
                 <tr>
                   <td>Berguedà</td>
@@ -482,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:5%;">
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
-<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.854 km Percentatge de cursos d’aigua a OSM: 62.38%</p>
+<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.857 km Percentatge de cursos d’aigua a OSM: 62.38%</p>
 </div>
 </div>
 </section>
