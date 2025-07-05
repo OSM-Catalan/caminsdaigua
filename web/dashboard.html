@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_rjnka3b3yzuqecjo3wqa(i, j, css_id) {
-          var table = document.getElementById("tinytable_rjnka3b3yzuqecjo3wqa");
+      function styleCell_rkp2iuzvoxenhb2r9dqv(i, j, css_id) {
+          var table = document.getElementById("tinytable_rkp2iuzvoxenhb2r9dqv");
           var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_rjnka3b3yzuqecjo3wqa');
+        var table = document.getElementById('tinytable_rkp2iuzvoxenhb2r9dqv');
         // Find the row with data-row attribute matching i
         var targetRow = table.querySelector(`tr [data-row="${i}"]`).closest('tr');
         var newRow = table.insertRow(targetRow.rowIndex);
@@ -157,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_rjnka3b3yzuqecjo3wqa(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_rjnka3b3yzuqecjo3wqa");
+      function spanCell_rkp2iuzvoxenhb2r9dqv(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_rkp2iuzvoxenhb2r9dqv");
         const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
         if (!targetCell) {
           console.warn(`Cell at (${i}, ${j}) not found.`);
@@ -189,14 +189,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_ouj4hy6e5ph2s8yv82a6',}, 
-          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_cstprdmn4l8hwfmaunl1',}, 
+          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_m6pzsf1xatsjyz5mnifc',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_wkhh01rm06hm0w7zq8ne',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_rjnka3b3yzuqecjo3wqa(cell.i, cell.j, group.css_id);
+                  styleCell_rkp2iuzvoxenhb2r9dqv(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -204,11 +204,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_ouj4hy6e5ph2s8yv82a6, .table th.tinytable_css_ouj4hy6e5ph2s8yv82a6 { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_cstprdmn4l8hwfmaunl1, .table th.tinytable_css_cstprdmn4l8hwfmaunl1 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_m6pzsf1xatsjyz5mnifc, .table th.tinytable_css_m6pzsf1xatsjyz5mnifc { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_wkhh01rm06hm0w7zq8ne, .table th.tinytable_css_wkhh01rm06hm0w7zq8ne { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_rjnka3b3yzuqecjo3wqa" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_rkp2iuzvoxenhb2r9dqv" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -258,15 +258,15 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td data-row="7" data-col="0">Bages</td>
-                  <td data-row="7" data-col="1">1.777,9</td>
+                  <td data-row="7" data-col="1">1.778,4</td>
                   <td data-row="7" data-col="2">2.693,75</td>
-                  <td data-row="7" data-col="3">66,00%</td>
+                  <td data-row="7" data-col="3">66,02%</td>
                 </tr>
                 <tr>
                   <td data-row="8" data-col="0">Baix Camp</td>
-                  <td data-row="8" data-col="1">1.483,0</td>
+                  <td data-row="8" data-col="1">1.495,9</td>
                   <td data-row="8" data-col="2">1.647,60</td>
-                  <td data-row="8" data-col="3">90,01%</td>
+                  <td data-row="8" data-col="3">90,79%</td>
                 </tr>
                 <tr>
                   <td data-row="9" data-col="0">Baix Ebre</td>
@@ -444,9 +444,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td data-row="38" data-col="0">Tarragonès</td>
-                  <td data-row="38" data-col="1">501,7</td>
+                  <td data-row="38" data-col="1">501,8</td>
                   <td data-row="38" data-col="2">485,16</td>
-                  <td data-row="38" data-col="3">103,41%</td>
+                  <td data-row="38" data-col="3">103,43%</td>
                 </tr>
                 <tr>
                   <td data-row="39" data-col="0">Terra Alta</td>
@@ -487,7 +487,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:5%;">
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
-<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.902 km Percentatge de cursos d’aigua a OSM: 62.45%</p>
+<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.916 km Percentatge de cursos d’aigua a OSM: 62.47%</p>
 </div>
 </div>
 </section>
