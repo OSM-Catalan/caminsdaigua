@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_lhjp9on5g5stw75h7b2j(i, j, css_id) {
-          var table = document.getElementById("tinytable_lhjp9on5g5stw75h7b2j");
+      function styleCell_tjp3r2vz6437i3h0v1jq(i, j, css_id) {
+          var table = document.getElementById("tinytable_tjp3r2vz6437i3h0v1jq");
           var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_lhjp9on5g5stw75h7b2j');
+        var table = document.getElementById('tinytable_tjp3r2vz6437i3h0v1jq');
         // Find the row with data-row attribute matching i
         var targetRow = table.querySelector(`tr [data-row="${i}"]`).closest('tr');
         var newRow = table.insertRow(targetRow.rowIndex);
@@ -157,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_lhjp9on5g5stw75h7b2j(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_lhjp9on5g5stw75h7b2j");
+      function spanCell_tjp3r2vz6437i3h0v1jq(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_tjp3r2vz6437i3h0v1jq");
         const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
         if (!targetCell) {
           console.warn(`Cell at (${i}, ${j}) not found.`);
@@ -189,14 +189,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_yjez5rf1ycc80f2wgarq',}, 
-          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_85t7064yn622e3hiv25b',}, 
+          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_05uecw6icd622w73ebea',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_f21avyw2deubrzxaogc7',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_lhjp9on5g5stw75h7b2j(cell.i, cell.j, group.css_id);
+                  styleCell_tjp3r2vz6437i3h0v1jq(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -204,11 +204,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_yjez5rf1ycc80f2wgarq, .table th.tinytable_css_yjez5rf1ycc80f2wgarq { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_85t7064yn622e3hiv25b, .table th.tinytable_css_85t7064yn622e3hiv25b { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_05uecw6icd622w73ebea, .table th.tinytable_css_05uecw6icd622w73ebea { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_f21avyw2deubrzxaogc7, .table th.tinytable_css_f21avyw2deubrzxaogc7 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_lhjp9on5g5stw75h7b2j" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_tjp3r2vz6437i3h0v1jq" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -264,9 +264,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td data-row="8" data-col="0">Baix Camp</td>
-                  <td data-row="8" data-col="1">1.506,1</td>
+                  <td data-row="8" data-col="1">1.517,0</td>
                   <td data-row="8" data-col="2">1.647,60</td>
-                  <td data-row="8" data-col="3">91,41%</td>
+                  <td data-row="8" data-col="3">92,07%</td>
                 </tr>
                 <tr>
                   <td data-row="9" data-col="0">Baix Ebre</td>
@@ -432,9 +432,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td data-row="36" data-col="0">Selva</td>
-                  <td data-row="36" data-col="1">1.651,2</td>
+                  <td data-row="36" data-col="1">1.651,8</td>
                   <td data-row="36" data-col="2">2.510,41</td>
-                  <td data-row="36" data-col="3">65,77%</td>
+                  <td data-row="36" data-col="3">65,80%</td>
                 </tr>
                 <tr>
                   <td data-row="37" data-col="0">Solsonès</td>
@@ -487,7 +487,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:5%;">
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
-<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.926 km Percentatge de cursos d’aigua a OSM: 62.48%</p>
+<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 43.937 km Percentatge de cursos d’aigua a OSM: 62.50%</p>
 </div>
 </div>
 </section>
