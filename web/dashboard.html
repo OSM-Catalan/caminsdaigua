@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_xjy4syorh2yu18nbr8fa(i, j, css_id) {
-          var table = document.getElementById("tinytable_xjy4syorh2yu18nbr8fa");
+      function styleCell_owe0jcs84djhittiauwr(i, j, css_id) {
+          var table = document.getElementById("tinytable_owe0jcs84djhittiauwr");
           var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_xjy4syorh2yu18nbr8fa');
+        var table = document.getElementById('tinytable_owe0jcs84djhittiauwr');
         // Find the row with data-row attribute matching i
         var targetRow = table.querySelector(`tr [data-row="${i}"]`).closest('tr');
         var newRow = table.insertRow(targetRow.rowIndex);
@@ -157,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_xjy4syorh2yu18nbr8fa(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_xjy4syorh2yu18nbr8fa");
+      function spanCell_owe0jcs84djhittiauwr(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_owe0jcs84djhittiauwr");
         const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
         if (!targetCell) {
           console.warn(`Cell at (${i}, ${j}) not found.`);
@@ -189,14 +189,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_x3fj7enm5marauxmoblj',}, 
-          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_a5jqdw3d4df8ajn2gl3i',}, 
+          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_box47sz24gs0xbyyy3ig',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_lufl3p9j7iuxe4wrpdfz',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_xjy4syorh2yu18nbr8fa(cell.i, cell.j, group.css_id);
+                  styleCell_owe0jcs84djhittiauwr(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -204,11 +204,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_x3fj7enm5marauxmoblj, .table th.tinytable_css_x3fj7enm5marauxmoblj { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_a5jqdw3d4df8ajn2gl3i, .table th.tinytable_css_a5jqdw3d4df8ajn2gl3i { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_box47sz24gs0xbyyy3ig, .table th.tinytable_css_box47sz24gs0xbyyy3ig { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_lufl3p9j7iuxe4wrpdfz, .table th.tinytable_css_lufl3p9j7iuxe4wrpdfz { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_xjy4syorh2yu18nbr8fa" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_owe0jcs84djhittiauwr" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -493,7 +493,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="mapes" class="level1">
 <h1>Mapes</h1>
-<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
+<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
