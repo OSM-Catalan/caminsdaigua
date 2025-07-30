@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_owe0jcs84djhittiauwr(i, j, css_id) {
-          var table = document.getElementById("tinytable_owe0jcs84djhittiauwr");
+      function styleCell_kbfe24l58m0np1kyhicn(i, j, css_id) {
+          var table = document.getElementById("tinytable_kbfe24l58m0np1kyhicn");
           var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -144,21 +144,8 @@ ul.task-list li input[type="checkbox"] {
               console.warn(`Cell at (${i}, ${j}) not found.`);
           }
       }
-      function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_owe0jcs84djhittiauwr');
-        // Find the row with data-row attribute matching i
-        var targetRow = table.querySelector(`tr [data-row="${i}"]`).closest('tr');
-        var newRow = table.insertRow(targetRow.rowIndex);
-        var newCell = newRow.insertCell(0);
-        newCell.setAttribute("colspan", colspan);
-        newCell.setAttribute("data-col", "0");
-        newCell.setAttribute("data-row", i - 1);
-        // newCell.innerText = content;
-        // this may be unsafe, but innerText does not interpret <br>
-        newCell.innerHTML = content;
-      }
-      function spanCell_owe0jcs84djhittiauwr(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_owe0jcs84djhittiauwr");
+      function spanCell_kbfe24l58m0np1kyhicn(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_kbfe24l58m0np1kyhicn");
         const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
         if (!targetCell) {
           console.warn(`Cell at (${i}, ${j}) not found.`);
@@ -189,14 +176,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_box47sz24gs0xbyyy3ig',}, 
-          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_lufl3p9j7iuxe4wrpdfz',}, 
+          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_63brj6mzy3sxzz7sc5h3',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_2s5xa7n3lvk6ui8d7zf2',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_owe0jcs84djhittiauwr(cell.i, cell.j, group.css_id);
+                  styleCell_kbfe24l58m0np1kyhicn(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -204,11 +191,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_box47sz24gs0xbyyy3ig, .table th.tinytable_css_box47sz24gs0xbyyy3ig { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_lufl3p9j7iuxe4wrpdfz, .table th.tinytable_css_lufl3p9j7iuxe4wrpdfz { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_63brj6mzy3sxzz7sc5h3, .table th.tinytable_css_63brj6mzy3sxzz7sc5h3 { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_2s5xa7n3lvk6ui8d7zf2, .table th.tinytable_css_2s5xa7n3lvk6ui8d7zf2 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_owe0jcs84djhittiauwr" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_kbfe24l58m0np1kyhicn" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -258,9 +245,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td data-row="7" data-col="0">Bages</td>
-                  <td data-row="7" data-col="1">1.778,7</td>
+                  <td data-row="7" data-col="1">1.781,1</td>
                   <td data-row="7" data-col="2">2.693,75</td>
-                  <td data-row="7" data-col="3">66,03%</td>
+                  <td data-row="7" data-col="3">66,12%</td>
                 </tr>
                 <tr>
                   <td data-row="8" data-col="0">Baix Camp</td>
@@ -414,9 +401,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td data-row="33" data-col="0">Ripollès</td>
-                  <td data-row="33" data-col="1">1.761,8</td>
+                  <td data-row="33" data-col="1">1.761,9</td>
                   <td data-row="33" data-col="2">2.221,60</td>
-                  <td data-row="33" data-col="3">79,30%</td>
+                  <td data-row="33" data-col="3">79,31%</td>
                 </tr>
                 <tr>
                   <td data-row="34" data-col="0">Segarra</td>
@@ -487,7 +474,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:5%;">
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
-<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 44.013 km Percentatge de cursos d’aigua a OSM: 62.61%</p>
+<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 44.015 km Percentatge de cursos d’aigua a OSM: 62.61%</p>
 </div>
 </div>
 </section>
