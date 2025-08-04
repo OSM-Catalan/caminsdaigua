@@ -134,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
 
-      function styleCell_t7hpm5vebtx5nmu1jlk0(i, j, css_id) {
-          var table = document.getElementById("tinytable_t7hpm5vebtx5nmu1jlk0");
+      function styleCell_vkwsibia1bihfb1a2h73(i, j, css_id) {
+          var table = document.getElementById("tinytable_vkwsibia1bihfb1a2h73");
           var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -144,8 +144,8 @@ ul.task-list li input[type="checkbox"] {
               console.warn(`Cell at (${i}, ${j}) not found.`);
           }
       }
-      function spanCell_t7hpm5vebtx5nmu1jlk0(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_t7hpm5vebtx5nmu1jlk0");
+      function spanCell_vkwsibia1bihfb1a2h73(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_vkwsibia1bihfb1a2h73");
         const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
         if (!targetCell) {
           console.warn(`Cell at (${i}, ${j}) not found.`);
@@ -176,14 +176,14 @@ ul.task-list li input[type="checkbox"] {
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_4x5qloj7z1oeqws6m89o',}, 
-          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_uzatzlpogcp2a6gqcevd',}, 
+          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_zppe0a9uq6w6ygwre8np',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_q135v3b67ntjnbm6ebn5',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_t7hpm5vebtx5nmu1jlk0(cell.i, cell.j, group.css_id);
+                  styleCell_vkwsibia1bihfb1a2h73(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -191,11 +191,11 @@ ul.task-list li input[type="checkbox"] {
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_4x5qloj7z1oeqws6m89o, .table th.tinytable_css_4x5qloj7z1oeqws6m89o { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_uzatzlpogcp2a6gqcevd, .table th.tinytable_css_uzatzlpogcp2a6gqcevd { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_zppe0a9uq6w6ygwre8np, .table th.tinytable_css_zppe0a9uq6w6ygwre8np { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_q135v3b67ntjnbm6ebn5, .table th.tinytable_css_q135v3b67ntjnbm6ebn5 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_t7hpm5vebtx5nmu1jlk0" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_vkwsibia1bihfb1a2h73" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -353,9 +353,9 @@ ul.task-list li input[type="checkbox"] {
                 </tr>
                 <tr>
                   <td data-row="25" data-col="0">Noguera</td>
-                  <td data-row="25" data-col="1">1.196,3</td>
+                  <td data-row="25" data-col="1">1.199,2</td>
                   <td data-row="25" data-col="2">3.271,01</td>
-                  <td data-row="25" data-col="3">36,57%</td>
+                  <td data-row="25" data-col="3">36,66%</td>
                 </tr>
                 <tr>
                   <td data-row="26" data-col="0">Osona</td>
@@ -474,7 +474,7 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:5%;">
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
-<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 44.032 km Percentatge de cursos d’aigua a OSM: 62.63%</p>
+<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 44.035 km Percentatge de cursos d’aigua a OSM: 62.64%</p>
 </div>
 </div>
 </section>
