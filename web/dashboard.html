@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ca" xml:lang="ca"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -133,338 +133,304 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <!-- preamble start -->
 
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
     <script>
-
-      function styleCell_vyyro9lglilexc3a2a8g(i, j, css_id) {
-          var table = document.getElementById("tinytable_vyyro9lglilexc3a2a8g");
-          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
-          if (cell) {
-              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
-              cell.classList.add(css_id);
-          } else {
-              console.warn(`Cell at (${i}, ${j}) not found.`);
-          }
-      }
-      function spanCell_vyyro9lglilexc3a2a8g(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_vyyro9lglilexc3a2a8g");
-        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
-        if (!targetCell) {
-          console.warn(`Cell at (${i}, ${j}) not found.`);
-        }
-
-        // Get all cells that need to be removed
-        const cellsToRemove = [];
-        for (let r = 0; r < rowspan; r++) {
-          for (let c = 0; c < colspan; c++) {
-            if (r === 0 && c === 0) continue; // Skip the target cell
-            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
-            if (cell) {
-              cellsToRemove.push(cell);
-            }
-          }
-        }
-
-        // Remove all cells
-        cellsToRemove.forEach(cell => cell.remove());
-
-        // Set rowspan and colspan of the target cell if it exists
-        if (targetCell) {
-          targetCell.rowSpan = rowspan;
-          targetCell.colSpan = colspan;
-        }
-      }
+      // Create table-specific functions using external factory
+      const tableFns_250v6wtcs6igd9wt3gk5 = TinyTable.createTableFunctions("tinytable_250v6wtcs6igd9wt3gk5");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '43', j: 0 }, { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 },  ], css_id: 'tinytable_css_2narqfco6r1kx43i9w4i',}, 
-          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 },  ], css_id: 'tinytable_css_c3anyq2e49tlj16tbqba',}, 
+          { positions: [ { i: '43', j: 1 }, { i: '43', j: 2 }, { i: '43', j: 3 }, { i: '43', j: 4 } ], css_id: 'tinytable_css_inwrnr1jqsofa2p5zf32',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_f2z0ow7t6vkqcfzo8x4s',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_vyyro9lglilexc3a2a8g(cell.i, cell.j, group.css_id);
+                  tableFns_250v6wtcs6igd9wt3gk5.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
     </script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
-      /* tinytable css entries after */
-      .table td.tinytable_css_2narqfco6r1kx43i9w4i, .table th.tinytable_css_2narqfco6r1kx43i9w4i { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_c3anyq2e49tlj16tbqba, .table th.tinytable_css_c3anyq2e49tlj16tbqba { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    /* tinytable css entries after */
+    #tinytable_250v6wtcs6igd9wt3gk5 td.tinytable_css_inwrnr1jqsofa2p5zf32, #tinytable_250v6wtcs6igd9wt3gk5 th.tinytable_css_inwrnr1jqsofa2p5zf32 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_250v6wtcs6igd9wt3gk5 td.tinytable_css_f2z0ow7t6vkqcfzo8x4s, #tinytable_250v6wtcs6igd9wt3gk5 th.tinytable_css_f2z0ow7t6vkqcfzo8x4s {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: black; --line-color-right: black; --line-color-top: black; --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_vyyro9lglilexc3a2a8g" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
-        <thead>
+      <table class="tinytable" id="tinytable_250v6wtcs6igd9wt3gk5" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
+        <thead>
               <tr>
-                <th scope="col" data-row="0" data-col="0">comarca</th>
-                <th scope="col" data-row="0" data-col="1">length_osm</th>
-                <th scope="col" data-row="0" data-col="2">length_icgc</th>
-                <th scope="col" data-row="0" data-col="3">ratio</th>
+                <th scope="col" data-row="0" data-col="1">comarca</th>
+                <th scope="col" data-row="0" data-col="2">length_osm</th>
+                <th scope="col" data-row="0" data-col="3">length_icgc</th>
+                <th scope="col" data-row="0" data-col="4">ratio</th>
               </tr>
         </thead>
         
         <tbody>
                 <tr>
-                  <td data-row="1" data-col="0">Alt Camp</td>
-                  <td data-row="1" data-col="1">595,51</td>
-                  <td data-row="1" data-col="2">1.142,06</td>
-                  <td data-row="1" data-col="3">52,14%</td>
+                  <td data-row="1" data-col="1">Alt Camp</td>
+                  <td data-row="1" data-col="2">595,51</td>
+                  <td data-row="1" data-col="3">1.142,06</td>
+                  <td data-row="1" data-col="4">52,14%</td>
                 </tr>
                 <tr>
-                  <td data-row="2" data-col="0">Alt Empordà</td>
-                  <td data-row="2" data-col="1">1.902,57</td>
-                  <td data-row="2" data-col="2">2.640,15</td>
-                  <td data-row="2" data-col="3">72,06%</td>
+                  <td data-row="2" data-col="1">Alt Empordà</td>
+                  <td data-row="2" data-col="2">1.902,57</td>
+                  <td data-row="2" data-col="3">2.640,15</td>
+                  <td data-row="2" data-col="4">72,06%</td>
                 </tr>
                 <tr>
-                  <td data-row="3" data-col="0">Alt Penedès</td>
-                  <td data-row="3" data-col="1">804,51</td>
-                  <td data-row="3" data-col="2">1.369,05</td>
-                  <td data-row="3" data-col="3">58,76%</td>
+                  <td data-row="3" data-col="1">Alt Penedès</td>
+                  <td data-row="3" data-col="2">804,51</td>
+                  <td data-row="3" data-col="3">1.369,05</td>
+                  <td data-row="3" data-col="4">58,76%</td>
                 </tr>
                 <tr>
-                  <td data-row="4" data-col="0">Alt Urgell</td>
-                  <td data-row="4" data-col="1">2.054,14</td>
-                  <td data-row="4" data-col="2">3.875,76</td>
-                  <td data-row="4" data-col="3">53,00%</td>
+                  <td data-row="4" data-col="1">Alt Urgell</td>
+                  <td data-row="4" data-col="2">2.054,14</td>
+                  <td data-row="4" data-col="3">3.875,76</td>
+                  <td data-row="4" data-col="4">53,00%</td>
                 </tr>
                 <tr>
-                  <td data-row="5" data-col="0">Alta Ribagorça</td>
-                  <td data-row="5" data-col="1">610,01</td>
-                  <td data-row="5" data-col="2">1.323,30</td>
-                  <td data-row="5" data-col="3">46,10%</td>
+                  <td data-row="5" data-col="1">Alta Ribagorça</td>
+                  <td data-row="5" data-col="2">610,01</td>
+                  <td data-row="5" data-col="3">1.323,30</td>
+                  <td data-row="5" data-col="4">46,10%</td>
                 </tr>
                 <tr>
-                  <td data-row="6" data-col="0">Anoia</td>
-                  <td data-row="6" data-col="1">1.039,80</td>
-                  <td data-row="6" data-col="2">2.075,36</td>
-                  <td data-row="6" data-col="3">50,10%</td>
+                  <td data-row="6" data-col="1">Anoia</td>
+                  <td data-row="6" data-col="2">1.039,80</td>
+                  <td data-row="6" data-col="3">2.075,36</td>
+                  <td data-row="6" data-col="4">50,10%</td>
                 </tr>
                 <tr>
-                  <td data-row="7" data-col="0">Bages</td>
-                  <td data-row="7" data-col="1">1.785,06</td>
-                  <td data-row="7" data-col="2">2.693,75</td>
-                  <td data-row="7" data-col="3">66,27%</td>
+                  <td data-row="7" data-col="1">Bages</td>
+                  <td data-row="7" data-col="2">1.785,06</td>
+                  <td data-row="7" data-col="3">2.693,75</td>
+                  <td data-row="7" data-col="4">66,27%</td>
                 </tr>
                 <tr>
-                  <td data-row="8" data-col="0">Baix Camp</td>
-                  <td data-row="8" data-col="1">1.634,94</td>
-                  <td data-row="8" data-col="2">1.647,60</td>
-                  <td data-row="8" data-col="3">99,23%</td>
+                  <td data-row="8" data-col="1">Baix Camp</td>
+                  <td data-row="8" data-col="2">1.634,94</td>
+                  <td data-row="8" data-col="3">1.647,60</td>
+                  <td data-row="8" data-col="4">99,23%</td>
                 </tr>
                 <tr>
-                  <td data-row="9" data-col="0">Baix Ebre</td>
-                  <td data-row="9" data-col="1">1.308,42</td>
-                  <td data-row="9" data-col="2">2.261,28</td>
-                  <td data-row="9" data-col="3">57,86%</td>
+                  <td data-row="9" data-col="1">Baix Ebre</td>
+                  <td data-row="9" data-col="2">1.308,42</td>
+                  <td data-row="9" data-col="3">2.261,28</td>
+                  <td data-row="9" data-col="4">57,86%</td>
                 </tr>
                 <tr>
-                  <td data-row="10" data-col="0">Baix Empordà</td>
-                  <td data-row="10" data-col="1">807,93</td>
-                  <td data-row="10" data-col="2">1.141,72</td>
-                  <td data-row="10" data-col="3">70,76%</td>
+                  <td data-row="10" data-col="1">Baix Empordà</td>
+                  <td data-row="10" data-col="2">807,93</td>
+                  <td data-row="10" data-col="3">1.141,72</td>
+                  <td data-row="10" data-col="4">70,76%</td>
                 </tr>
                 <tr>
-                  <td data-row="11" data-col="0">Baix Llobregat</td>
-                  <td data-row="11" data-col="1">983,62</td>
-                  <td data-row="11" data-col="2">1.013,61</td>
-                  <td data-row="11" data-col="3">97,04%</td>
+                  <td data-row="11" data-col="1">Baix Llobregat</td>
+                  <td data-row="11" data-col="2">983,62</td>
+                  <td data-row="11" data-col="3">1.013,61</td>
+                  <td data-row="11" data-col="4">97,04%</td>
                 </tr>
                 <tr>
-                  <td data-row="12" data-col="0">Baix Penedès</td>
-                  <td data-row="12" data-col="1">377,31</td>
-                  <td data-row="12" data-col="2">690,56</td>
-                  <td data-row="12" data-col="3">54,64%</td>
+                  <td data-row="12" data-col="1">Baix Penedès</td>
+                  <td data-row="12" data-col="2">377,31</td>
+                  <td data-row="12" data-col="3">690,56</td>
+                  <td data-row="12" data-col="4">54,64%</td>
                 </tr>
                 <tr>
-                  <td data-row="13" data-col="0">Barcelonès</td>
-                  <td data-row="13" data-col="1">232,24</td>
-                  <td data-row="13" data-col="2">273,08</td>
-                  <td data-row="13" data-col="3">85,05%</td>
+                  <td data-row="13" data-col="1">Barcelonès</td>
+                  <td data-row="13" data-col="2">232,24</td>
+                  <td data-row="13" data-col="3">273,08</td>
+                  <td data-row="13" data-col="4">85,05%</td>
                 </tr>
                 <tr>
-                  <td data-row="14" data-col="0">Berguedà</td>
-                  <td data-row="14" data-col="1">1.522,26</td>
-                  <td data-row="14" data-col="2">2.877,05</td>
-                  <td data-row="14" data-col="3">52,91%</td>
+                  <td data-row="14" data-col="1">Berguedà</td>
+                  <td data-row="14" data-col="2">1.522,26</td>
+                  <td data-row="14" data-col="3">2.877,05</td>
+                  <td data-row="14" data-col="4">52,91%</td>
                 </tr>
                 <tr>
-                  <td data-row="15" data-col="0">Cerdanya</td>
-                  <td data-row="15" data-col="1">946,68</td>
-                  <td data-row="15" data-col="2">1.192,22</td>
-                  <td data-row="15" data-col="3">79,40%</td>
+                  <td data-row="15" data-col="1">Cerdanya</td>
+                  <td data-row="15" data-col="2">946,68</td>
+                  <td data-row="15" data-col="3">1.192,22</td>
+                  <td data-row="15" data-col="4">79,40%</td>
                 </tr>
                 <tr>
-                  <td data-row="16" data-col="0">Conca de Barberà</td>
-                  <td data-row="16" data-col="1">673,98</td>
-                  <td data-row="16" data-col="2">1.437,71</td>
-                  <td data-row="16" data-col="3">46,88%</td>
+                  <td data-row="16" data-col="1">Conca de Barberà</td>
+                  <td data-row="16" data-col="2">673,98</td>
+                  <td data-row="16" data-col="3">1.437,71</td>
+                  <td data-row="16" data-col="4">46,88%</td>
                 </tr>
                 <tr>
-                  <td data-row="17" data-col="0">Garraf</td>
-                  <td data-row="17" data-col="1">338,62</td>
-                  <td data-row="17" data-col="2">451,17</td>
-                  <td data-row="17" data-col="3">75,06%</td>
+                  <td data-row="17" data-col="1">Garraf</td>
+                  <td data-row="17" data-col="2">338,62</td>
+                  <td data-row="17" data-col="3">451,17</td>
+                  <td data-row="17" data-col="4">75,06%</td>
                 </tr>
                 <tr>
-                  <td data-row="18" data-col="0">Garrigues</td>
-                  <td data-row="18" data-col="1">256,80</td>
-                  <td data-row="18" data-col="2">1.332,94</td>
-                  <td data-row="18" data-col="3">19,27%</td>
+                  <td data-row="18" data-col="1">Garrigues</td>
+                  <td data-row="18" data-col="2">256,80</td>
+                  <td data-row="18" data-col="3">1.332,94</td>
+                  <td data-row="18" data-col="4">19,27%</td>
                 </tr>
                 <tr>
-                  <td data-row="19" data-col="0">Garrotxa</td>
-                  <td data-row="19" data-col="1">1.583,95</td>
-                  <td data-row="19" data-col="2">1.899,53</td>
-                  <td data-row="19" data-col="3">83,39%</td>
+                  <td data-row="19" data-col="1">Garrotxa</td>
+                  <td data-row="19" data-col="2">1.583,95</td>
+                  <td data-row="19" data-col="3">1.899,53</td>
+                  <td data-row="19" data-col="4">83,39%</td>
                 </tr>
                 <tr>
-                  <td data-row="20" data-col="0">Gironès</td>
-                  <td data-row="20" data-col="1">761,70</td>
-                  <td data-row="20" data-col="2">1.150,84</td>
-                  <td data-row="20" data-col="3">66,19%</td>
+                  <td data-row="20" data-col="1">Gironès</td>
+                  <td data-row="20" data-col="2">761,70</td>
+                  <td data-row="20" data-col="3">1.150,84</td>
+                  <td data-row="20" data-col="4">66,19%</td>
                 </tr>
                 <tr>
-                  <td data-row="21" data-col="0">Lluçanès</td>
-                  <td data-row="21" data-col="1">216,02</td>
-                  <td data-row="21" data-col="2">571,35</td>
-                  <td data-row="21" data-col="3">37,81%</td>
+                  <td data-row="21" data-col="1">Lluçanès</td>
+                  <td data-row="21" data-col="2">216,02</td>
+                  <td data-row="21" data-col="3">571,35</td>
+                  <td data-row="21" data-col="4">37,81%</td>
                 </tr>
                 <tr>
-                  <td data-row="22" data-col="0">Maresme</td>
-                  <td data-row="22" data-col="1">1.254,35</td>
-                  <td data-row="22" data-col="2">916,68</td>
-                  <td data-row="22" data-col="3">136,84%</td>
+                  <td data-row="22" data-col="1">Maresme</td>
+                  <td data-row="22" data-col="2">1.254,35</td>
+                  <td data-row="22" data-col="3">916,68</td>
+                  <td data-row="22" data-col="4">136,84%</td>
                 </tr>
                 <tr>
-                  <td data-row="23" data-col="0">Moianès</td>
-                  <td data-row="23" data-col="1">433,32</td>
-                  <td data-row="23" data-col="2">821,29</td>
-                  <td data-row="23" data-col="3">52,76%</td>
+                  <td data-row="23" data-col="1">Moianès</td>
+                  <td data-row="23" data-col="2">433,32</td>
+                  <td data-row="23" data-col="3">821,29</td>
+                  <td data-row="23" data-col="4">52,76%</td>
                 </tr>
                 <tr>
-                  <td data-row="24" data-col="0">Montsià</td>
-                  <td data-row="24" data-col="1">1.037,82</td>
-                  <td data-row="24" data-col="2">1.110,86</td>
-                  <td data-row="24" data-col="3">93,42%</td>
+                  <td data-row="24" data-col="1">Montsià</td>
+                  <td data-row="24" data-col="2">1.037,82</td>
+                  <td data-row="24" data-col="3">1.110,86</td>
+                  <td data-row="24" data-col="4">93,42%</td>
                 </tr>
                 <tr>
-                  <td data-row="25" data-col="0">Noguera</td>
-                  <td data-row="25" data-col="1">1.354,72</td>
-                  <td data-row="25" data-col="2">3.271,01</td>
-                  <td data-row="25" data-col="3">41,42%</td>
+                  <td data-row="25" data-col="1">Noguera</td>
+                  <td data-row="25" data-col="2">1.354,72</td>
+                  <td data-row="25" data-col="3">3.271,01</td>
+                  <td data-row="25" data-col="4">41,42%</td>
                 </tr>
                 <tr>
-                  <td data-row="26" data-col="0">Osona</td>
-                  <td data-row="26" data-col="1">2.095,27</td>
-                  <td data-row="26" data-col="2">2.228,27</td>
-                  <td data-row="26" data-col="3">94,03%</td>
+                  <td data-row="26" data-col="1">Osona</td>
+                  <td data-row="26" data-col="2">2.095,27</td>
+                  <td data-row="26" data-col="3">2.228,27</td>
+                  <td data-row="26" data-col="4">94,03%</td>
                 </tr>
                 <tr>
-                  <td data-row="27" data-col="0">Pallars Jussà</td>
-                  <td data-row="27" data-col="1">1.977,74</td>
-                  <td data-row="27" data-col="2">3.477,89</td>
-                  <td data-row="27" data-col="3">56,87%</td>
+                  <td data-row="27" data-col="1">Pallars Jussà</td>
+                  <td data-row="27" data-col="2">1.977,74</td>
+                  <td data-row="27" data-col="3">3.477,89</td>
+                  <td data-row="27" data-col="4">56,87%</td>
                 </tr>
                 <tr>
-                  <td data-row="28" data-col="0">Pallars Sobirà</td>
-                  <td data-row="28" data-col="1">2.053,31</td>
-                  <td data-row="28" data-col="2">3.450,59</td>
-                  <td data-row="28" data-col="3">59,51%</td>
+                  <td data-row="28" data-col="1">Pallars Sobirà</td>
+                  <td data-row="28" data-col="2">2.053,31</td>
+                  <td data-row="28" data-col="3">3.450,59</td>
+                  <td data-row="28" data-col="4">59,51%</td>
                 </tr>
                 <tr>
-                  <td data-row="29" data-col="0">Pla d'Urgell</td>
-                  <td data-row="29" data-col="1">157,79</td>
-                  <td data-row="29" data-col="2">164,75</td>
-                  <td data-row="29" data-col="3">95,77%</td>
+                  <td data-row="29" data-col="1">Pla d'Urgell</td>
+                  <td data-row="29" data-col="2">157,79</td>
+                  <td data-row="29" data-col="3">164,75</td>
+                  <td data-row="29" data-col="4">95,77%</td>
                 </tr>
                 <tr>
-                  <td data-row="30" data-col="0">Pla de l'Estany</td>
-                  <td data-row="30" data-col="1">459,23</td>
-                  <td data-row="30" data-col="2">570,34</td>
-                  <td data-row="30" data-col="3">80,52%</td>
+                  <td data-row="30" data-col="1">Pla de l'Estany</td>
+                  <td data-row="30" data-col="2">459,23</td>
+                  <td data-row="30" data-col="3">570,34</td>
+                  <td data-row="30" data-col="4">80,52%</td>
                 </tr>
                 <tr>
-                  <td data-row="31" data-col="0">Priorat</td>
-                  <td data-row="31" data-col="1">755,10</td>
-                  <td data-row="31" data-col="2">1.339,08</td>
-                  <td data-row="31" data-col="3">56,39%</td>
+                  <td data-row="31" data-col="1">Priorat</td>
+                  <td data-row="31" data-col="2">774,22</td>
+                  <td data-row="31" data-col="3">1.339,08</td>
+                  <td data-row="31" data-col="4">57,82%</td>
                 </tr>
                 <tr>
-                  <td data-row="32" data-col="0">Ribera d'Ebre</td>
-                  <td data-row="32" data-col="1">672,94</td>
-                  <td data-row="32" data-col="2">2.180,47</td>
-                  <td data-row="32" data-col="3">30,86%</td>
+                  <td data-row="32" data-col="1">Ribera d'Ebre</td>
+                  <td data-row="32" data-col="2">675,18</td>
+                  <td data-row="32" data-col="3">2.180,47</td>
+                  <td data-row="32" data-col="4">30,96%</td>
                 </tr>
                 <tr>
-                  <td data-row="33" data-col="0">Ripollès</td>
-                  <td data-row="33" data-col="1">1.807,20</td>
-                  <td data-row="33" data-col="2">2.221,60</td>
-                  <td data-row="33" data-col="3">81,35%</td>
+                  <td data-row="33" data-col="1">Ripollès</td>
+                  <td data-row="33" data-col="2">1.807,20</td>
+                  <td data-row="33" data-col="3">2.221,60</td>
+                  <td data-row="33" data-col="4">81,35%</td>
                 </tr>
                 <tr>
-                  <td data-row="34" data-col="0">Segarra</td>
-                  <td data-row="34" data-col="1">122,93</td>
-                  <td data-row="34" data-col="2">1.003,11</td>
-                  <td data-row="34" data-col="3">12,25%</td>
+                  <td data-row="34" data-col="1">Segarra</td>
+                  <td data-row="34" data-col="2">122,93</td>
+                  <td data-row="34" data-col="3">1.003,11</td>
+                  <td data-row="34" data-col="4">12,25%</td>
                 </tr>
                 <tr>
-                  <td data-row="35" data-col="0">Segrià</td>
-                  <td data-row="35" data-col="1">815,11</td>
-                  <td data-row="35" data-col="2">1.712,23</td>
-                  <td data-row="35" data-col="3">47,60%</td>
+                  <td data-row="35" data-col="1">Segrià</td>
+                  <td data-row="35" data-col="2">815,11</td>
+                  <td data-row="35" data-col="3">1.712,23</td>
+                  <td data-row="35" data-col="4">47,60%</td>
                 </tr>
                 <tr>
-                  <td data-row="36" data-col="0">Selva</td>
-                  <td data-row="36" data-col="1">1.670,24</td>
-                  <td data-row="36" data-col="2">2.510,41</td>
-                  <td data-row="36" data-col="3">66,53%</td>
+                  <td data-row="36" data-col="1">Selva</td>
+                  <td data-row="36" data-col="2">1.670,24</td>
+                  <td data-row="36" data-col="3">2.510,41</td>
+                  <td data-row="36" data-col="4">66,53%</td>
                 </tr>
                 <tr>
-                  <td data-row="37" data-col="0">Solsonès</td>
-                  <td data-row="37" data-col="1">1.140,00</td>
-                  <td data-row="37" data-col="2">2.670,21</td>
-                  <td data-row="37" data-col="3">42,69%</td>
+                  <td data-row="37" data-col="1">Solsonès</td>
+                  <td data-row="37" data-col="2">1.140,00</td>
+                  <td data-row="37" data-col="3">2.670,21</td>
+                  <td data-row="37" data-col="4">42,69%</td>
                 </tr>
                 <tr>
-                  <td data-row="38" data-col="0">Tarragonès</td>
-                  <td data-row="38" data-col="1">501,70</td>
-                  <td data-row="38" data-col="2">485,16</td>
-                  <td data-row="38" data-col="3">103,41%</td>
+                  <td data-row="38" data-col="1">Tarragonès</td>
+                  <td data-row="38" data-col="2">501,70</td>
+                  <td data-row="38" data-col="3">485,16</td>
+                  <td data-row="38" data-col="4">103,41%</td>
                 </tr>
                 <tr>
-                  <td data-row="39" data-col="0">Terra Alta</td>
-                  <td data-row="39" data-col="1">575,62</td>
-                  <td data-row="39" data-col="2">1.844,55</td>
-                  <td data-row="39" data-col="3">31,21%</td>
+                  <td data-row="39" data-col="1">Terra Alta</td>
+                  <td data-row="39" data-col="2">575,62</td>
+                  <td data-row="39" data-col="3">1.844,55</td>
+                  <td data-row="39" data-col="4">31,21%</td>
                 </tr>
                 <tr>
-                  <td data-row="40" data-col="0">Urgell</td>
-                  <td data-row="40" data-col="1">322,60</td>
-                  <td data-row="40" data-col="2">699,34</td>
-                  <td data-row="40" data-col="3">46,13%</td>
+                  <td data-row="40" data-col="1">Urgell</td>
+                  <td data-row="40" data-col="2">322,60</td>
+                  <td data-row="40" data-col="3">699,34</td>
+                  <td data-row="40" data-col="4">46,13%</td>
                 </tr>
                 <tr>
-                  <td data-row="41" data-col="0">Val d'Aran</td>
-                  <td data-row="41" data-col="1">1.581,59</td>
-                  <td data-row="41" data-col="2">1.586,99</td>
-                  <td data-row="41" data-col="3">99,66%</td>
+                  <td data-row="41" data-col="1">Val d'Aran</td>
+                  <td data-row="41" data-col="2">1.581,59</td>
+                  <td data-row="41" data-col="3">1.586,99</td>
+                  <td data-row="41" data-col="4">99,66%</td>
                 </tr>
                 <tr>
-                  <td data-row="42" data-col="0">Vallès Occidental</td>
-                  <td data-row="42" data-col="1">1.429,20</td>
-                  <td data-row="42" data-col="2">1.312,19</td>
-                  <td data-row="42" data-col="3">108,92%</td>
+                  <td data-row="42" data-col="1">Vallès Occidental</td>
+                  <td data-row="42" data-col="2">1.429,20</td>
+                  <td data-row="42" data-col="3">1.312,19</td>
+                  <td data-row="42" data-col="4">108,92%</td>
                 </tr>
                 <tr>
-                  <td data-row="43" data-col="0">Vallès Oriental</td>
-                  <td data-row="43" data-col="1">1.939,98</td>
-                  <td data-row="43" data-col="2">1.664,54</td>
-                  <td data-row="43" data-col="3">116,55%</td>
+                  <td data-row="43" data-col="1">Vallès Oriental</td>
+                  <td data-row="43" data-col="2">1.939,98</td>
+                  <td data-row="43" data-col="3">1.664,54</td>
+                  <td data-row="43" data-col="4">116,55%</td>
                 </tr>
         </tbody>
       </table>
@@ -475,13 +441,13 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:5%;">
 <!-- empty column to create gap -->
 </div><div class="column" style="width:20%;">
-<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 44.594 km Percentatge de cursos d’aigua a OSM: 63.43%</p>
+<p>Longitud cursos d’aigua ICGC: 70.302 km Longitud cursos d’aigua OSM: 44.615 km Percentatge de cursos d’aigua a OSM: 63.46%</p>
 </div>
 </div>
 </section>
 <section id="mapes" class="level1">
 <h1>Mapes</h1>
-<div class="cell quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="dashboard_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
